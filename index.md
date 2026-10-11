@@ -5,6 +5,12 @@ handle: "æ://neuromitosis/teotech · #OpenCourseWare 🏵️"
 headline: "Una clase abierta puede viajar, reproducirse y mejorar."
 lede: "🤳 Theme 9:16 para cursos abiertos. Fondo de tinta con WebGPU y un tutor que corre dentro del teléfono con WebLLM."
 cycle: ["APRENDER","CONSTRUIR","COMPROBAR","ENSEÑAR"]
+ticker:
+  - {countdown: "2@19:00", label: "DEMO · MARTES 7 PM"}
+  - "WEBGPU EN TU TELÉFONO"
+  - "TUTOR æ SIN NUBE"
+  - "#OPENCOURSEWARE 🏵️"
+  - "EL HUMANO CONSERVA EL CRITERIO"
 ---
 
 <div class="card y"><b>Se multiplica la enseñanza. El humano conserva el criterio.</b></div>
@@ -21,6 +27,15 @@ Toca **TUTOR** abajo. La primera vez descarga un modelo pequeño (~300 MB) y lo 
 <li>Tutor æ que lee la página actual y responde sobre ella.</li>
 </ul>
 </div>
+
+<details class="fold" id="componentes" open>
+<summary><span class="n">01</span><span class="t">Componentes<small>tickers · plegables · tutor</small></span><span class="pm"></span></summary>
+<div class="in-fold" markdown="1">
+- **Ticker** con cuenta regresiva en la zona del sitio: `ticker:` en el front matter.
+- **Secciones plegables** que recuerdan si las dejaste abiertas.
+- **Revelado al hacer scroll** y botón de copiar con `data-copy`.
+</div>
+</details>
 
 ## Por qué así
 - **Soberanía:** el modelo es tuyo una vez descargado. Cero renta de nube.

@@ -1,0 +1,3 @@
+{% assign tk = include.items | default: page.ticker %}{% if tk %}
+<div class="ticker{% if include.alt %} alt{% endif %}" aria-label="Avisos" role="marquee"><div class="tk-track">{% for r in (1..2) %}<div class="tk-run"{% if r == 2 %} aria-hidden="true"{% endif %}>{% for it in tk %}<span class="tk-it">{% if it.countdown %}<b data-countdown="{{ it.countdown }}">{{ it.label | default: "PRÓXIMA CLASE" }}</b>{% else %}{{ it }}{% endif %}</span><i>◆</i>{% endfor %}</div>{% endfor %}</div></div>
+{% endif %}

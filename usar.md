@@ -31,3 +31,21 @@ Apaga el tutor en una página con `tutor: false`.
 
 ## Requisitos del tutor
 WebGPU: Chrome reciente en Android o computadora, Safari 26 en iPhone. ~1 GB de memoria libre. Sin WebGPU, la página funciona igual y el tutor lo explica.
+
+## Ticker
+```yaml
+ticker:
+  - {countdown: "2@19:00", label: "PRÓXIMA CLASE"}   # día (0=domingo) @ hora, zona del sitio
+  - "Texto que corre"
+```
+
+## Sección plegable
+```html
+<details class="fold" id="ruta">
+<summary><span class="n">01</span><span class="t">Título<small>subtítulo</small></span><span class="pm"></span></summary>
+<div class="in-fold" markdown="1">
+Contenido en **markdown**.
+</div>
+</details>
+```
+Colores: añade `b`, `g` o `k` a la clase. Con `data-solo` solo una queda abierta. Un botón con `data-fold-all` pliega o despliega todo.
