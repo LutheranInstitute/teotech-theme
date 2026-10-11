@@ -1,0 +1,6 @@
+<nav class="dock">
+  {% assign items = site.teotech.dock | default: site.data.dock %}
+  {% if items %}{% for it in items %}<a href="{{ it.url | relative_url }}"{% if page.url == it.url %} class="on"{% endif %}><span>{{ it.icon }}</span>{{ it.label }}</a>{% endfor %}
+  {% else %}<a href="{{ '/' | relative_url }}"><span>⌂</span>INICIO</a><a href="#top"><span>↑</span>ARRIBA</a>{% endif %}
+  {% unless page.tutor == false or site.teotech.tutor == false %}<button type="button" data-tutor-open><span>æ</span>TUTOR</button>{% endunless %}
+</nav>

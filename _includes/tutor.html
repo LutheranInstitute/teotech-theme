@@ -1,0 +1,11 @@
+<dialog class="tutor" id="tutor">
+  <div class="tt-head"><b>&gt;_ TUTOR æ</b><span class="tt-m">en tu teléfono · sin nube</span><button type="button" data-tutor-close aria-label="Cerrar">✕</button></div>
+  <div class="tt-log" id="ttLog" aria-live="polite">
+    <div class="msg sys">Soy un modelo pequeño que corre <b>dentro de tu navegador</b> con WebGPU. Nada de lo que escribas sale de tu equipo.<br><br>La primera vez descargo ~300 MB y quedan guardados. Úsame con Wi-Fi. Puedo equivocarme: <b>tú compruebas, tú decides.</b></div>
+  </div>
+  <div class="tt-prog" id="ttProg" hidden><i></i><span></span></div>
+  <div class="tt-start" id="ttStart"><button type="button" class="btn y" id="ttLoad">DESCARGAR Y ENCENDER</button><small id="ttWhy"></small></div>
+  <form class="tt-in" id="ttForm" hidden><input id="ttQ" autocomplete="off" placeholder="Pregunta sobre esta página…" enterkeyhint="send"><button class="btn">↵</button></form>
+  <div class="tt-foot"><button type="button" class="lnk" id="ttForget">borrar modelo guardado</button></div>
+</dialog>
+<script type="module" src="{{ '/assets/js/tutor.js' | relative_url }}"></script>

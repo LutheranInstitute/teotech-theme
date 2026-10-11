@@ -1,0 +1,13 @@
+title: "TEOTECH theme"
+description: "æ://neuromitosis/teotech · #OpenCourseWare · theme Jekyll 9:16 con WebGPU y WebLLM"
+lang: es
+timezone: America/Chicago
+teotech:
+  handle: neuromitosis/teotech
+  tutor: true
+  footer: "æ://neuromitosis/teotech · #OpenCourseWare 🏵️ · Se multiplica la enseñanza. El humano conserva el criterio."
+  dock:
+    - {label: "INICIO", icon: "⌂", url: "/"}
+    - {label: "DEMO", icon: "◧", url: "/demo/"}
+    - {label: "USAR", icon: ">_", url: "/usar/"}
+exclude: [README.md, LICENSE, "*.gemspec", Gemfile]

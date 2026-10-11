@@ -1,0 +1,11 @@
+---
+layout: default
+---
+<article class="clase">
+  <div class="lbl">MÓDULO {{ page.modulo }}{% if page.sesion %} · {{ page.sesion | upcase }}{% endif %}</div>
+  <h1>{{ page.title }}</h1>
+  {% if page.grabacion != "" or page.pdf != "" or page.resumen != "" %}
+  <div class="chips">{% if page.grabacion and page.grabacion != "" %}<a href="{{ page.grabacion }}">▶ GRABACIÓN</a>{% endif %}{% if page.pdf and page.pdf != "" %}<a href="{{ page.pdf }}">⎙ PDF</a>{% endif %}{% if page.resumen and page.resumen != "" %}<a href="{{ page.resumen }}">≡ RESUMEN</a>{% endif %}</div>
+  {% endif %}
+  {{ content }}
+</article>
