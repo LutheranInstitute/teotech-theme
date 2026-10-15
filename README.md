@@ -6,11 +6,11 @@ Theme Jekyll 9:16, mobile-first, para cursos abiertos (#OpenCourseWare).
 - Fondo de tinta animado con **WebGPU** (se apaga solo si no hay GPU o con movimiento reducido).
 - **Tutor æ con WebLLM**: Qwen2.5 0.5B corre en el navegador. Se descarga solo al tocar un botón (~300 MB, una vez), queda en caché y se puede borrar. Nada sale del equipo.
 
-Demo: https://yaeleureka-afk.github.io/teotech-theme/
+Demo: https://lutheraninstitute.github.io/teotech-theme/
 
 ## Uso
 ```yaml
-remote_theme: yaeleureka-afk/teotech-theme
+remote_theme: LutheranInstitute/teotech-theme
 plugins: [jekyll-remote-theme]
 ```
 Ver `usar.md`. Licencia MIT.

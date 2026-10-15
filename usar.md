@@ -10,7 +10,7 @@ permalink: /usar/
 En el `_config.yml` de tu sitio de GitHub Pages:
 
 ```yaml
-remote_theme: yaeleureka-afk/teotech-theme
+remote_theme: LutheranInstitute/teotech-theme
 plugins:
   - jekyll-remote-theme
 teotech:
